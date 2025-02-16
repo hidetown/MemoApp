@@ -1,3 +1,5 @@
+// 本ファイルは不要なため、消しても問題ない。
+
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
