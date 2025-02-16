@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
+import Hello from './src/components/Hello'
+
 // アローファンクションにして型を宣言する。
 const App = (): JSX.Element => {
   // 型を宣言する。
@@ -15,6 +17,10 @@ const App = (): JSX.Element => {
 
   return (
     <View style={styles.container}>
+      {/* bang : !を指すように指定。必ずtrueならbangだけでtrue判定となる。 */}
+      <Hello bang>World</Hello>
+      {/* オブジェクトの中にTextStyleオブジェクトを入れる。 */}
+      <Hello style={{ fontSize: 16 }}>World</Hello>
       <Text>Open up App.tsx to start working on your app!!!!!</Text>
       <StatusBar style="auto" />
     </View>
